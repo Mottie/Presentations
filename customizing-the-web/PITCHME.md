@@ -39,7 +39,7 @@ UserStyles & UserScripts
 - Why? Change stuff
 - How? UserStyle manager
 
-Notes: hide ads, change theme or move elements
+Note: hide ads, change theme or move elements
 
 ---
 
@@ -115,7 +115,7 @@ Notes: hide ads, change theme or move elements
   <li>[xStyle](https://github.com/FirefoxBar/xStyle) (Feb 2017)</li> <!-- .element: class="fragment" data-fragment-index="3" -->
 </ul>
 
-Notes: Stylish sold to SimilarWeb Jan 2017
+Note: Stylish sold to SimilarWeb Jan 2017
 
 ---
 
@@ -126,7 +126,7 @@ Notes: Stylish sold to SimilarWeb Jan 2017
 - [OpenUserCss.org](https://openusercss.org/) (Beta)
 - Anywhere (UserCSS only)
 
-Notes: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
+Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ---
 
@@ -199,7 +199,7 @@ Notes: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 - [OpenUserJS.org](https://openuserjs.org)
 - Anywhere (GitHub, GitLab, Bitbucket, etc)
 
-Notes: GreasyFork.org also by Stylish author, not sold
+Note: GreasyFork.org also by Stylish author, not sold
 
 ---
 
