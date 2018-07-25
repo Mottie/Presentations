@@ -130,7 +130,7 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ---
 
-![](nyan-cat-progress.gif)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/nyan-cat-progress.gif)
 
 <small>https://openusercss.org/theme/5b44efdce6b5730b0032f83f</small>
 
