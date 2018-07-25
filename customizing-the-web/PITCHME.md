@@ -1,13 +1,3 @@
----
-title: Customizing the web
-author: Rob Garrison
-date: July 26, 2018
-theme: night
-revealOptions:
-  transition: 'convex'
-  overview: true
-  highlight: darcula
----
 <!-- .slide: data-background="url(https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
 
 <style>
