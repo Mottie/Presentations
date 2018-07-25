@@ -8,7 +8,7 @@ revealOptions:
   overview: true
   highlight: darcula
 ---
-<!-- .slide: data-background="url(unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
+<!-- .slide: data-background="url(https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
 
 <style>
 /* First slide */
@@ -93,19 +93,19 @@ Notes: hide ads, change theme or move elements
 
 | Before | After |
 |:------:|:-----:|
-| ![](./userstyle-before.png) | ![](./userstyle-after.png) |
+| ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userstyle-before.png) | ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userstyle-after.png) |
 
 ---
 
 #### GitHub-Dark UserCSS Settings
 
-![](./github-dark-settings.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/github-dark-settings.png)
 
 ---
 
 ### UserStyles Managers
 
-![](./userstyle-support.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userstyle-support.png)
 
 <ul>
   <li>
@@ -172,9 +172,9 @@ Notes: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
   <th>After</th>
 </tr>
 <tr>
-  <td><img src="./userscript1-before.png"></td>
+  <td><img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript1-before.png"></td>
   <td>
-    <img src="./userscript1-after.png">
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript1-after.png">
     <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">https://greasyfork.org/en/scripts/20974</a>
     <a href="https://greasyfork.org/en/scripts/18789" style="font-size:14px; color: #FF3230;">https://greasyfork.org/en/scripts/18789</a>
     <a href="https://greasyfork.org/en/scripts/18141" style="font-size:14px; color: #FB9632;">https://greasyfork.org/en/scripts/18141</a>
@@ -186,7 +186,7 @@ Notes: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ### UserScript Managers
 
-![](./userscript-support.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript-support.png)
 
 - [Greasemonkey](https://www.greasespot.net/) (Firefox only)
 - [Tampermonkey](https://tampermonkey.net/)
@@ -205,8 +205,8 @@ Notes: GreasyFork.org also by Stylish author, not sold
 
 ### GitHub Custom Navigation
 
-Before ![](./userscript2-before.png)
-After  ![](./userscript2-after.png)
+Before ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript2-before.png)
+After  ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript2-after.png)
 
 <small>https://greasyfork.org/en/scripts/20830</small>
 
@@ -222,19 +222,19 @@ After  ![](./userscript2-after.png)
 
 #### UserStyle
 
-![](./stylus.gif)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/stylus.gif)
 
 ---
 
 #### UserScript
 
-![](./tampermonkey.gif)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/tampermonkey.gif)
 
 ---
 
 #### Rob Garrison
 
-![](./avatar.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/avatar.png)
 
 &#x00ab;w&#x006f;wm&#111;&#x0074;&#116;y&#x40;&#103;m&#x0061;il&#46;c&#111;m&#187;
 <br>
