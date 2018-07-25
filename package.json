@@ -1,0 +1,12 @@
+{
+	"name": "presentations",
+	"version": "1.0.0",
+	"description": "Various presentations",
+	"license": "MIT",
+	"repository": "Mottie/Presentations",
+	"author": {
+		"name": "Rob Garrison",
+		"email": "wowmotty@gmail.com",
+		"url": "https://github.com/Mottie"
+	}
+}
