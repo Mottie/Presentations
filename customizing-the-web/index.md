@@ -1,4 +1,4 @@
-<!-- .slide: data-background="url(https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
+<!-- .slide: data-background="url(images/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
 
 <style>
 /* First slide */
@@ -49,6 +49,8 @@ Note: hide ads, change theme or move elements
 
 <small>https://developer.mozilla.org/en-US/docs/Web/CSS/@document</small>
 
+Note: @document has been deprecated
+
 ---
 
 ### UserCSS (CSS/Stylus)
@@ -83,26 +85,28 @@ Note: hide ads, change theme or move elements
 
 | Before | After |
 |:------:|:-----:|
-| ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userstyle-before.png) | ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userstyle-after.png) |
+| ![](images/userstyle-before.png) | ![](images/userstyle-after.png) |
 
 ---
 
 #### GitHub-Dark UserCSS Settings
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/github-dark-settings.png)
+![](images/github-dark-settings.png)
 
 ---
 
 ### UserStyles Managers
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userstyle-support.png)
+![](images/userstyle-support.png)
 
 <ul>
   <li>
-    <span>Stylish (2005)</span> <!-- .element: class="fragment highlight-red line-through" data-fragment-index="4" -->
+    <span>Stylish (2005)</span> <!-- .element: class="fragment highlight-red line-through" data-fragment-index="6" -->
   </li> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <li>[Stylus](https://add0n.com/stylus.html) (Jan 2017)</li> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <li>[xStyle](https://github.com/FirefoxBar/xStyle) (Feb 2017)</li> <!-- .element: class="fragment" data-fragment-index="3" -->
+  <li><a href="https://add0n.com/stylus.html">Stylus</a> (Jan 2017)</li> <!-- .element: class="fragment" data-fragment-index="2" -->
+  <li><a href="https://github.com/FirefoxBar/xStyle">xStyle</a> (Feb 2017)</li> <!-- .element: class="fragment" data-fragment-index="3" -->
+  <li><a href="https://cascadea.app/">Cascadea</a> (Safari only; Oct 2018)</li> <!-- .element: class="fragment" data-fragment-index="4"> -->
+  <li><a href="https://add0n.com/stylus.html">Stylus</a> (Webkit-based Edge, through Chrome web store)</li> <!-- .element: class="fragment" data-fragment-index="5"> -->
 </ul>
 
 Note: Stylish sold to SimilarWeb Jan 2017
@@ -111,16 +115,22 @@ Note: Stylish sold to SimilarWeb Jan 2017
 
 ### UserStyle Storehouses
 
-- [Userstyles.org](https://userstyles.org)
-- [FreeStyler.ws](https://freestyler.ws/)
-- [OpenUserCss.org](https://openusercss.org/) (Beta)
-- Anywhere (UserCSS only)
+<ul>
+  <li>
+    <a href="https://userstyles.org">
+      <span>Userstyles.org</span> <!-- .element: class="fragment highlight-red line-through" data-fragment-index="1" -->
+    </a>
+  </li>
+  <li><a href="https://33kk.github.io/uso-archive/">USO-archive</a> (archive of Userstyles.org)</li>
+  <li><a href="https://freestyler.ws/">FreeStyler.ws</a></li>
+  <li>Anywhere (UserCSS only)</li>
+</ul>
 
 Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ---
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/nyan-cat-progress.gif)
+![](images/nyan-cat-progress.gif)
 
 <small>https://openusercss.org/theme/5b44efdce6b5730b0032f83f</small>
 
@@ -162,9 +172,9 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
   <th>After</th>
 </tr>
 <tr>
-  <td><img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript1-before.png"></td>
+  <td><img src="images/userscript1-before.png"></td>
   <td>
-    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript1-after.png">
+    <img src="images/userscript1-after.png">
     <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">https://greasyfork.org/en/scripts/20974</a>
     <a href="https://greasyfork.org/en/scripts/18789" style="font-size:14px; color: #FF3230;">https://greasyfork.org/en/scripts/18789</a>
     <a href="https://greasyfork.org/en/scripts/18141" style="font-size:14px; color: #FB9632;">https://greasyfork.org/en/scripts/18141</a>
@@ -176,7 +186,7 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ### UserScript Managers
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript-support.png)
+![](images/userscript-support.png)
 
 - [Greasemonkey](https://www.greasespot.net/) (Firefox only)
 - [Tampermonkey](https://tampermonkey.net/)
@@ -195,8 +205,8 @@ Note: GreasyFork.org also by Stylish author, not sold
 
 ### GitHub Custom Navigation
 
-Before ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript2-before.png)
-After  ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/userscript2-after.png)
+Before ![](images/userscript2-before.png)
+After  ![](images/userscript2-after.png)
 
 <small>https://greasyfork.org/en/scripts/20830</small>
 
@@ -212,22 +222,20 @@ After  ![](https://raw.githubusercontent.com/Mottie/Presentations/master/customi
 
 #### UserStyle
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/stylus.gif)
+![](images/stylus.gif)
 
 ---
 
 #### UserScript
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/tampermonkey.gif)
+![](images/tampermonkey.gif)
 
 ---
 
 #### Rob Garrison
 
-![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/avatar.png)
+![](images/avatar.png)
 
 &#x00ab;w&#x006f;wm&#111;&#x0074;&#116;y&#x40;&#103;m&#x0061;il&#46;c&#111;m&#187;
 <br>
 [github.com/Mottie](https://github.com/Mottie)
-
-<strong>(&gt;")&gt;</strong> Hire me! <strong>&lt;("&lt;)</strong>
