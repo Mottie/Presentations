@@ -1,4 +1,4 @@
-<!-- .slide: data-background="#000 url(images/epic-deadpool-t-shirt-teeturtle-marvel_800x.jpg) no-repeat center 50%" -->
+<!-- .slide: data-background="#000 url(https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/epic-deadpool-t-shirt-teeturtle-marvel_800x.jpg) no-repeat center 50%" -->
 
 <style>
 /* First slide */
@@ -49,7 +49,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
 
 ---
 
-### <img src="images/warning.png" class="header-icon" /> Warning
+### <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/warning.png" class="header-icon" /> Warning
 
 - Privacy risks
 - Can store & share info (bypass CSP)
@@ -114,9 +114,9 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
 
 ### GitHub Custom Navigation
 
-![](images/custom-nav-before.png)
-![](images/custom-nav-after.png)
-<img src="images/custom-nav-settings.png" style="height: 250px;" />
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/custom-nav-before.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/custom-nav-after.png)
+<img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/custom-nav-settings.png" style="height: 250px;" />
 
 <a class="small-font" href="https://greasyfork.org/en/scripts/20830">
   https://greasyfork.org/en/scripts/20830
@@ -129,12 +129,12 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
 <div class="flex-row2">
   <div>
     Before
-    <img src="images/userscript1-before.png">
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/userscript1-before.png">
   </div>
 
   <div>
     After
-    <img src="images/userscript1-after.png">
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/userscript1-after.png">
     <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">
       https://greasyfork.org/en/scripts/20974
     </a>
@@ -151,7 +151,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
 
 ### Userscript Managers
 
-![](images/userscript-support.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/userscript-support.png)
 
 - [Tampermonkey](https://tampermonkey.net/)
 - [Greasemonkey](https://www.greasespot.net/)
@@ -177,8 +177,8 @@ Note: GM4 removes `GM_{api}` and adds `GM.{api}` which uses promises exclusively
 #### Install Userscript
 
 <div class="flex-row">
-  <img src="images/greasyfork.png" />
-  <img src="images/tampermonkey.png" />
+  <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/greasyfork.png" />
+  <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/tampermonkey.png" />
 </div>
 
 Note: Examine the code at any step
@@ -259,7 +259,7 @@ var encodedBookmarkletHref = encodeURI(
 <a href="javascript:(function(){var d=document,j=d.getElementById('__cornify_nodes'),k=null,c='https://cornify.com/js/cornify',l=0;var f=['.js','_run.js'];if(j){cornify_add();}else{k=d.createElement('div');k.id='__cornify_nodes';d.getElementsByTagName('body')[0].appendChild(k);for(;l<f.length;l++){j=d.createElement('script');j.src=c+f[l];k.appendChild(j);}}})();">cornify</a>
 ```
 
-<img src="images/cornify.jpg" width="350" />
+<img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/cornify.jpg" width="350" />
 <br />
 <a class="small-font" href="https://www.cornify.com/extras">
   https://www.cornify.com/extras
@@ -285,7 +285,7 @@ var encodedBookmarkletHref = encodeURI(
 
 #### Rob Garrison
 
-![](images/avatar.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/avatar.png)
 
 &#x00ab;w&#x006f;wm&#111;&#x0074;&#116;y&#x40;&#103;m&#x0061;il&#46;c&#111;m&#187;
 <br>

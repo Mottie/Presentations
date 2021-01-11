@@ -1,4 +1,4 @@
-<!-- .slide: data-background="url(images/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
+<!-- .slide: data-background="url(https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
 
 <style>
 /* First slide */
@@ -88,12 +88,12 @@ Note: @document has been deprecated
 <div class="flex-row">
   <div>
     Before
-    <img src="images/userstyle-before.png" />
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userstyle-before.png" />
   </div>
 
   <div>
     After
-    <img src="images/userstyle-after.png" />
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userstyle-after.png" />
   </div>
 </div>
 
@@ -101,13 +101,13 @@ Note: @document has been deprecated
 
 #### GitHub-Dark UserCSS Settings
 
-![](images/github-dark-settings.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/github-dark-settings.png)
 
 ---
 
 ### UserStyles Managers
 
-![](images/userstyle-support.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userstyle-support.png)
 
 <ul>
   <li class="fragment" data-fragment-index="1">
@@ -156,7 +156,7 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ---
 
-![](images/nyan-cat-progress.gif)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/nyan-cat-progress.gif)
 
 <small>https://33kk.github.io/uso-archive/?style=95033</small>
 
@@ -192,9 +192,9 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ### GitHub Custom Navigation
 
-![](images/custom-nav-before.png)
-![](images/custom-nav-after.png)
-<img src="images/custom-nav-settings.png" style="height: 250px;" />
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/custom-nav-before.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/custom-nav-after.png)
+<img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/custom-nav-settings.png" style="height: 250px;" />
 
 <small>https://greasyfork.org/en/scripts/20830</small>
 
@@ -205,11 +205,11 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 <div class="flex-row">
   <div>
     Before
-    <img src="images/userscript1-before.png">
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userscript1-before.png">
   </div>
   <div>
     After
-    <img src="images/userscript1-after.png">
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userscript1-after.png">
     <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">
       https://greasyfork.org/en/scripts/20974
     </a>
@@ -226,7 +226,7 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ### UserScript Managers
 
-![](images/userscript-support.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userscript-support.png)
 
 - [Tampermonkey](https://tampermonkey.net/)
 - [Greasemonkey](https://www.greasespot.net/)
@@ -262,13 +262,13 @@ Note: GreasyFork.org also by Stylish author, not sold
 
 #### UserStyle
 
-![](images/stylus.gif)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/stylus.gif)
 
 ---
 
 #### UserScript
 
-![](images/tampermonkey.gif)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/tampermonkey.gif)
 
 ---
 
@@ -276,7 +276,7 @@ Note: GreasyFork.org also by Stylish author, not sold
 
 #### Rob Garrison
 
-![](images/avatar.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/avatar.png)
 
 &#x00ab;w&#x006f;wm&#111;&#x0074;&#116;y&#x40;&#103;m&#x0061;il&#46;c&#111;m&#187;
 <br>
