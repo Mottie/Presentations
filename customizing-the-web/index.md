@@ -7,9 +7,11 @@
 .reveal h2, .reveal p, .reveal a { text-shadow:1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000; }
 .reveal a.smallest { font-size:.5em; bottom: -100px; }
 /* rest of the slides */
+pre { white-space: pre-wrap; word-break: break-all; }
 .reveal section img { background: transparent; border-color: #333; }
-.reveal table tbody th { width: 50%; text-align: center; font-size: 30px; border-color: #333; }
-.reveal table tbody td { width: 50%; text-align: center; vertical-align: top; line-height: .4em; }
+.reveal .flex-row { display: flex; }
+.reveal .flex-row > div { width: 50%; }
+.reveal .flex-row a { display: block; margin-bottom: 0.5em; }
 .line-through.visible { text-decoration: line-through; }
 .reveal strong { color: #555; font-size: .7em; }
 </style>
@@ -83,9 +85,17 @@ Note: @document has been deprecated
 
 ### GitHub-Dark UserStyle
 
-| Before | After |
-|:------:|:-----:|
-| ![](images/userstyle-before.png) | ![](images/userstyle-after.png) |
+<div class="flex-row">
+  <div>
+    Before
+    <img src="images/userstyle-before.png" />
+  </div>
+
+  <div>
+    After
+    <img src="images/userstyle-after.png" />
+  </div>
+</div>
 
 ---
 
@@ -100,13 +110,28 @@ Note: @document has been deprecated
 ![](images/userstyle-support.png)
 
 <ul>
-  <li>
-    <span>Stylish (2005)</span> <!-- .element: class="fragment highlight-red line-through" data-fragment-index="6" -->
-  </li> <!-- .element: class="fragment" data-fragment-index="1" -->
-  <li><a href="https://add0n.com/stylus.html">Stylus</a> (Jan 2017)</li> <!-- .element: class="fragment" data-fragment-index="2" -->
-  <li><a href="https://github.com/FirefoxBar/xStyle">xStyle</a> (Feb 2017)</li> <!-- .element: class="fragment" data-fragment-index="3" -->
-  <li><a href="https://cascadea.app/">Cascadea</a> (Safari only; Oct 2018)</li> <!-- .element: class="fragment" data-fragment-index="4"> -->
-  <li><a href="https://add0n.com/stylus.html">Stylus</a> (Webkit-based Edge, through Chrome web store)</li> <!-- .element: class="fragment" data-fragment-index="5"> -->
+  <li class="fragment" data-fragment-index="1">
+    <span class="fragment highlight-red line-through" data-fragment-index="6">
+      Stylish (2005)
+    </span>
+    <span class="fragment" data-fragment-index="6">(SimilarWeb tracking)</span>
+  </li>
+  <li class="fragment" data-fragment-index="2">
+    <a href="https://add0n.com/stylus.html">Stylus</a>
+    (Jan 2017)
+  </li>
+  <li class="fragment" data-fragment-index="3">
+    <a href="https://github.com/FirefoxBar/xStyle">xStyle</a>
+    (Feb 2017)
+  </li>
+  <li class="fragment" data-fragment-index="4">
+    <a href="https://cascadea.app/">Cascadea</a>
+    (Safari only; Oct 2018)
+  </li>
+  <li class="fragment" data-fragment-index="5">
+    <a href="https://add0n.com/stylus.html">Stylus</a>
+    (Webkit-based Edge, through Chrome web store)
+  </li>
 </ul>
 
 Note: Stylish sold to SimilarWeb Jan 2017
@@ -118,8 +143,9 @@ Note: Stylish sold to SimilarWeb Jan 2017
 <ul>
   <li>
     <a href="https://userstyles.org">
-      <span>Userstyles.org</span> <!-- .element: class="fragment highlight-red line-through" data-fragment-index="1" -->
+      <span class="fragment highlight-red line-through" data-fragment-index="1">Userstyles.org</span>
     </a>
+    <span class="fragment" data-fragment-index="1">(poorly maintained)</span>
   </li>
   <li><a href="https://33kk.github.io/uso-archive/">USO-archive</a> (archive of Userstyles.org)</li>
   <li><a href="https://freestyler.ws/">FreeStyler.ws</a></li>
@@ -132,7 +158,7 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ![](images/nyan-cat-progress.gif)
 
-<small>https://openusercss.org/theme/5b44efdce6b5730b0032f83f</small>
+<small>https://33kk.github.io/uso-archive/?style=95033</small>
 
 ---
 
@@ -164,23 +190,37 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ---
 
-#### GitHub UserScripts
+### GitHub Custom Navigation
 
-<table>
-<tr>
-  <th>Before</th>
-  <th>After</th>
-</tr>
-<tr>
-  <td><img src="images/userscript1-before.png"></td>
-  <td>
+![](images/custom-nav-before.png)
+![](images/custom-nav-after.png)
+<img src="images/custom-nav-settings.png" style="height: 250px;" />
+
+<small>https://greasyfork.org/en/scripts/20830</small>
+
+---
+
+#### More GitHub UserScripts
+
+<div class="flex-row">
+  <div>
+    Before
+    <img src="images/userscript1-before.png">
+  </div>
+  <div>
+    After
     <img src="images/userscript1-after.png">
-    <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">https://greasyfork.org/en/scripts/20974</a>
-    <a href="https://greasyfork.org/en/scripts/18789" style="font-size:14px; color: #FF3230;">https://greasyfork.org/en/scripts/18789</a>
-    <a href="https://greasyfork.org/en/scripts/18141" style="font-size:14px; color: #FB9632;">https://greasyfork.org/en/scripts/18141</a>
-  </td>
-</tr>
-</table>
+    <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">
+      https://greasyfork.org/en/scripts/20974
+    </a>
+    <a href="https://greasyfork.org/en/scripts/18789" style="font-size:14px; color: #FF3230;">
+      https://greasyfork.org/en/scripts/18789
+    </a>
+    <a href="https://greasyfork.org/en/scripts/18141" style="font-size:14px; color: #FB9632;">
+      https://greasyfork.org/en/scripts/18141
+    </a>
+  </div>
+</div>
 
 ---
 
@@ -188,27 +228,27 @@ Note: userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017
 
 ![](images/userscript-support.png)
 
-- [Greasemonkey](https://www.greasespot.net/) (Firefox only)
 - [Tampermonkey](https://tampermonkey.net/)
+- [Greasemonkey](https://www.greasespot.net/)
+  - Firefox only
+  - Version 4 not backwards compatible
+- [Chromium](https://www.chromium.org/developers/design-documents/user-scripts)
+  - No storage
+  - Same-origin only
+
+Note: GM4 removes `GM_{api}` and adds `GM.{api}` which uses promises exclusively
 
 ---
 
-### UserScript Storehouses
+### Userscript Storehouses/lists
 
 - [GreasyFork.org](https://greasyfork.org)
 - [OpenUserJS.org](https://openuserjs.org)
-- Anywhere (GitHub, GitLab, Bitbucket, etc)
+- Hosted anywhere (GitHub, GitLab, Bitbucket, etc)
+- [github.com/bvolpato/awesome-userscripts](https://github.com/bvolpato/awesome-userscripts) (curated list)
+
 
 Note: GreasyFork.org also by Stylish author, not sold
-
----
-
-### GitHub Custom Navigation
-
-Before ![](images/userscript2-before.png)
-After  ![](images/userscript2-after.png)
-
-<small>https://greasyfork.org/en/scripts/20830</small>
 
 ---
 
@@ -231,6 +271,8 @@ After  ![](images/userscript2-after.png)
 ![](images/tampermonkey.gif)
 
 ---
+
+### Thanks!
 
 #### Rob Garrison
 
