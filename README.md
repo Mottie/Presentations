@@ -18,3 +18,4 @@ Click on the thumbnail to start the presentation
 |   |
 |:-:|
 | [![Customizing the web](customizing-the-web/images/thumb-customizing-the-web.png)](https://gitpitch.com/Mottie/presentations/master?p=customizing-the-web) |
+| [![Userscripts & Bookmarklets](userscripts/images/thumb-userscripts-bookmarklets.png)](https://gitpitch.com/Mottie/presentations/master?p=userscripts) |
