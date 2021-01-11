@@ -3,8 +3,8 @@
 <style>
 /* First slide */
 #userscripts-bookmarklets { margin-top: 100px; font-size: 1em; }
-.reveal .image-placeholder { height: 250px; }
-.reveal .backgrounds .slide-background:first-child { background-size: 30% auto !important; }
+.reveal section img { border: 0; }
+.reveal .backgrounds .slide-background[data-background-hash^="url(https"] { background-size: 30% auto !important; }
 .reveal h2, .reveal p, .reveal a { text-shadow:1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000; }
 /* rest of the slides */
 pre { white-space: pre-wrap; word-break: break-all; }
