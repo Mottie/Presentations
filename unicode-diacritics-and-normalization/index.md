@@ -1,4 +1,6 @@
-<!-- .slidex: data-background="url(./images/uni.gif) no-repeat center 20%" -->
+---
+title: Unicode, diacritics and normalization
+---
 
 <style>
 /* First slide */

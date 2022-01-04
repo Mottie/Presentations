@@ -1,3 +1,7 @@
+---
+title: Userscripts & bookmarklets
+---
+
 <!-- .slide: data-background="#000 url(https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/epic-deadpool-t-shirt-teeturtle-marvel_800x.jpg) no-repeat center 50%" -->
 
 <style>
