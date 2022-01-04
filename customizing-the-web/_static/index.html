@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="url(https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/unicorn_riding_rainbow_by_k_rui-d3lmuln.gif) no-repeat center 10%" -->
+
+<style>
+/* First slide */
+#customizing-the-web { margin-top: 150px; }
+.reveal section img { border: 0; }
+.reveal .backgrounds .slide-background[data-background-hash^="url(https"] { background-size: 30% auto !important; }
+.reveal h2, .reveal p, .reveal a { text-shadow:1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000; }
+.reveal a.smallest { font-size:.5em; bottom: -100px; }
+/* rest of the slides */
+pre { white-space: pre-wrap; word-break: break-all; }
+.reveal section img { background: transparent; border-color: #333; }
+.reveal .flex-row { display: flex; }
+.reveal .flex-row > div { width: 50%; }
+.reveal .flex-row a { display: block; margin-bottom: 0.5em; }
+.line-through.visible { text-decoration: line-through; }
+.reveal strong { color: #555; font-size: .7em; }
+</style>
+
+## Customizing the web
+
+UserStyles & UserScripts
+
+<a href="https://www.deviantart.com/k-rui/art/unicorn-riding-rainbow-217736555" class="smallest">https://www.deviantart.com/k-rui/art/unicorn-riding-rainbow-217736555</a>
+</script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="#222" -->
+
+## UserStyles
+
+- What? Injected CSS
+- Why? Change stuff
+- How? UserStyle manager
+
+<aside class="notes"><p>hide ads, change theme or move elements</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### UserStyle CSS
+
+```css
+@-moz-document domain("foo.com"), regexp("^https?://bar\\.com$") {
+  body {
+    background: #111 !important;
+    color: #ddd !important;
+  }
+  #site-ads {
+    display: none !important;
+  }
+}
+```
+
+<small>https://developer.mozilla.org/en-US/docs/Web/CSS/@document</small>
+
+<aside class="notes"><p>@document has been deprecated</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### UserCSS (CSS/Stylus)
+
+```css
+/* ==UserStyle==
+@name        My UserStyle
+@version     v0.0.1
+@description Make everything rainbows!
+@namespace   github.com/me
+@author      Me
+@license     CC-BY-SA-4.0
+@var         color bkgd-color 'Background color' #111
+==/UserStyle== */
+@-moz-document domain("foo.com"), regexp("^https?://bar\\.com$") {
+  body {
+    background-color: var(--bkgd-color) !important;
+    background-image: url(https://my-site/rainbow.png) !important;
+  }
+}
+```
+
+```css
+:root { --bkgd-color: #111 } /* <-- injected & based on user choice */
+```
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background="#222" -->
+
+### GitHub-Dark UserStyle
+
+<div class="flex-row">
+  <div>
+    Before
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userstyle-before.png" />
+  </div>
+
+  <div>
+    After
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userstyle-after.png" />
+  </div>
+</div>
+</script></section><section  data-markdown><script type="text/template">
+#### GitHub-Dark UserCSS Settings
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/github-dark-settings.png)
+</script></section><section  data-markdown><script type="text/template">
+### UserStyles Managers
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userstyle-support.png)
+
+<ul>
+  <li class="fragment" data-fragment-index="1">
+    <span class="fragment highlight-red line-through" data-fragment-index="6">
+      Stylish (2005)
+    </span>
+    <span class="fragment" data-fragment-index="6">(SimilarWeb tracking)</span>
+  </li>
+  <li class="fragment" data-fragment-index="2">
+    <a href="https://add0n.com/stylus.html">Stylus</a>
+    (Jan 2017)
+  </li>
+  <li class="fragment" data-fragment-index="3">
+    <a href="https://github.com/FirefoxBar/xStyle">xStyle</a>
+    (Feb 2017)
+  </li>
+  <li class="fragment" data-fragment-index="4">
+    <a href="https://cascadea.app/">Cascadea</a>
+    (Safari only; Oct 2018)
+  </li>
+  <li class="fragment" data-fragment-index="5">
+    <a href="https://add0n.com/stylus.html">Stylus</a>
+    (Webkit-based Edge, through Chrome web store)
+  </li>
+</ul>
+
+<aside class="notes"><p>Stylish sold to SimilarWeb Jan 2017</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### UserStyle Storehouses
+
+<ul>
+  <li>
+    <a href="https://userstyles.org">
+      <span class="fragment highlight-red line-through" data-fragment-index="1">Userstyles.org</span>
+    </a>
+    <span class="fragment" data-fragment-index="1">(poorly maintained)</span>
+  </li>
+  <li><a href="https://33kk.github.io/uso-archive/">USO-archive</a> (archive of Userstyles.org)</li>
+  <li><a href="https://freestyler.ws/">FreeStyler.ws</a></li>
+  <li>Anywhere (UserCSS only)</li>
+</ul>
+
+<aside class="notes"><p>userstyles.org by Stylish author, also sold to SimilarWeb Jan 2017</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/nyan-cat-progress.gif)
+
+<small>https://33kk.github.io/uso-archive/?style=95033</small>
+</script></section><section  data-markdown><script type="text/template">
+## UserScripts
+
+- What? Injected JavaScript
+- Why? Change stuff
+- How? UserScript manager
+</script></section><section  data-markdown><script type="text/template">
+#### UserScript (JavaScript)
+
+```js
+// ==UserScript==
+// @name        My Userscript
+// @version     0.0.1
+// @description Try to take over the world!
+// @namespace   github.com/me
+// @author      Me
+// @match       https://www.google.com
+// @grant       none
+// ==/UserScript==
+(function() {
+  'use strict';
+  // Your code here...
+})();
+```
+</script></section><section  data-markdown><script type="text/template">
+### GitHub Custom Navigation
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/custom-nav-before.png)
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/custom-nav-after.png)
+<img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/custom-nav-settings.png" style="height: 250px;" />
+
+<small>https://greasyfork.org/en/scripts/20830</small>
+</script></section><section  data-markdown><script type="text/template">
+#### More GitHub UserScripts
+
+<div class="flex-row">
+  <div>
+    Before
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userscript1-before.png">
+  </div>
+  <div>
+    After
+    <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userscript1-after.png">
+    <a href="https://greasyfork.org/en/scripts/20974" style="font-size:14px; color: #91C0F0;">
+      https://greasyfork.org/en/scripts/20974
+    </a>
+    <a href="https://greasyfork.org/en/scripts/18789" style="font-size:14px; color: #FF3230;">
+      https://greasyfork.org/en/scripts/18789
+    </a>
+    <a href="https://greasyfork.org/en/scripts/18141" style="font-size:14px; color: #FB9632;">
+      https://greasyfork.org/en/scripts/18141
+    </a>
+  </div>
+</div>
+</script></section><section  data-markdown><script type="text/template">
+### UserScript Managers
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/userscript-support.png)
+
+- [Tampermonkey](https://tampermonkey.net/)
+- [Greasemonkey](https://www.greasespot.net/)
+  - Firefox only
+  - Version 4 not backwards compatible
+- [Chromium](https://www.chromium.org/developers/design-documents/user-scripts)
+  - No storage
+  - Same-origin only
+
+<aside class="notes"><p>GM4 removes <code>GM_{api}</code> and adds <code>GM.{api}</code> which uses promises exclusively</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### Userscript Storehouses/lists
+
+- [GreasyFork.org](https://greasyfork.org)
+- [OpenUserJS.org](https://openuserjs.org)
+- Hosted anywhere (GitHub, GitLab, Bitbucket, etc)
+- [github.com/bvolpato/awesome-userscripts](https://github.com/bvolpato/awesome-userscripts) (curated list)
+
+
+<aside class="notes"><p>GreasyFork.org also by Stylish author, not sold</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### Quick Review
+
+1. Install manager.
+2. Go to a storehouse.
+3. Search by site name.
+</script></section><section  data-markdown><script type="text/template">
+#### UserStyle
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/stylus.gif)
+</script></section><section  data-markdown><script type="text/template">
+#### UserScript
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/tampermonkey.gif)
+</script></section><section  data-markdown><script type="text/template">
+### Thanks!
+
+#### Rob Garrison
+
+![](https://raw.githubusercontent.com/Mottie/Presentations/master/customizing-the-web/images/avatar.png)
+
+&#x00ab;w&#x006f;wm&#111;&#x0074;&#116;y&#x40;&#103;m&#x0061;il&#46;c&#111;m&#187;
+<br>
+[github.com/Mottie](https://github.com/Mottie)
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>

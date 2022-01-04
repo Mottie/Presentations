@@ -1,4 +1,21 @@
-<!-- .slide: data-background="#000 url(https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/epic-deadpool-t-shirt-teeturtle-marvel_800x.jpg) no-repeat center 50%" -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>reveal-md</title>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
+    <link rel="stylesheet" href="./dist/reveal.css" />
+    <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="./css/highlight/zenburn.css" />
+
+
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template"><!-- .slide: data-background="#000 url(https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/epic-deadpool-t-shirt-teeturtle-marvel_800x.jpg) no-repeat center 50%" -->
 
 <style>
 /* First slide */
@@ -8,8 +25,8 @@
 .reveal .backgrounds .slide-background[data-background-hash^="url(https"] { background-size: 30% auto !important; }
 .reveal h2, .reveal p, .reveal a { text-shadow:1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000; }
 /* rest of the slides */
-pre { white-space: pre-wrap; word-break: break-all; }
-code { color: #FB9632; }
+.reveal section pre, .reveal section code { white-space: pre-wrap; word-break: break-all; }
+.reveal code { color: #FB9632; }
 .header-icon { height: 1em; vertical-align: text-bottom; }
 .reveal section img { background: transparent; border-color: #333; }
 .line-through.visible { text-decoration: line-through; }
@@ -33,9 +50,7 @@ Epically customize the web
 <a class="bottom-link" href="https://www.teeturtle.com/products/epic-deadpool-shirt">
   https://www.teeturtle.com/products/epic-deadpool-shirt
 </a>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Userscripts
 
 - What? Injected JavaScript
@@ -46,19 +61,15 @@ Epically customize the web
   https://github.com/OpenUserJs/OpenUserJS.org/wiki/Userscript-Beginners-HOWTO
 </a>
 
-Note: Userscripts used to be built-into browsers, but were removed for security issues. Maybe still available in Chromium (with limitations)?
-
----
-
+<aside class="notes"><p>Userscripts used to be built-into browsers, but were removed for security issues. Maybe still available in Chromium (with limitations)?</p>
+</aside></script></section><section  data-markdown><script type="text/template">
 ### <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/warning.png" class="header-icon" /> Warning
 
 - Privacy risks
 - Can store & share info (bypass CSP)
 - Don't install from untrusted sources
 - Examine the code!
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Userscript (JavaScript)
 
 ```js
@@ -77,9 +88,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
   // Your code here...
 })();
 ```
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Metadata<sup class="small-font">1</sup>
 
 - `@name` + `@namespace` - unique id
@@ -98,9 +107,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
     GM_xmlHttpRequest & @connect 
   </a>
 </div>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### API <span class="small-font">(common)</span>
 
 - `GM_addStyle` - Inject CSS stylesheet
@@ -110,9 +117,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
 <a class="bottom-link" href="https://wiki.greasespot.net/Greasemonkey_Manual:API">
   https://wiki.greasespot.net/Greasemonkey_Manual:API
 </a>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### GitHub Custom Navigation
 
 ![](https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/custom-nav-before.png)
@@ -122,9 +127,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
 <a class="small-font" href="https://greasyfork.org/en/scripts/20830">
   https://greasyfork.org/en/scripts/20830
 </a>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### More GitHub Userscripts
 
 <div class="flex-row2">
@@ -147,9 +150,7 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
     </a>
   </div>
 </div>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Userscript Managers
 
 ![](https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/userscript-support.png)
@@ -162,19 +163,15 @@ Note: Userscripts used to be built-into browsers, but were removed for security 
   - No storage
   - Same-origin only
 
-Note: GM4 removes `GM_{api}` and adds `GM.{api}` which uses promises exclusively
-
----
-
+<aside class="notes"><p>GM4 removes <code>GM_{api}</code> and adds <code>GM.{api}</code> which uses promises exclusively</p>
+</aside></script></section><section  data-markdown><script type="text/template">
 ### Userscript Storehouses/lists
 
 - [GreasyFork.org](https://greasyfork.org)
 - [OpenUserJS.org](https://openuserjs.org)
 - Hosted anywhere (GitHub, GitLab, Bitbucket, etc)
 - [github.com/bvolpato/awesome-userscripts](https://github.com/bvolpato/awesome-userscripts) (curated list)
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 #### Install Userscript
 
 <div class="flex-row">
@@ -182,22 +179,16 @@ Note: GM4 removes `GM_{api}` and adds `GM.{api}` which uses promises exclusively
   <img src="https://raw.githubusercontent.com/Mottie/Presentations/master/userscripts/images/tampermonkey.png" />
 </div>
 
-Note: Examine the code at any step
-
----
-
+<aside class="notes"><p>Examine the code at any step</p>
+</aside></script></section><section  data-markdown><script type="text/template">
 ### Questions?
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ## Bookmarklets
 
 - What? Run JavaScript (CSP limitations)
 - Why? Manually customize stuff
 - How? Click a link or browser bookmark
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Bookmarklet Creation
 
 ```js
@@ -209,6 +200,9 @@ var encodedBookmarkletHref = encodeURI(
   'javascript:(' + bookmarklet.toString() + ')();'
 );
 ```
+
+Result
+
 
 ```html
 <a href="javascript:(function()%7B/*%20code%20to%20be%20executed%20*/%7D)();">Click me</a>
@@ -223,9 +217,7 @@ var encodedBookmarkletHref = encodeURI(
     https://code.tutsplus.com/tutorials/create-bookmarklets-the-right-way--net-18154
   </a>
 </small>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Bookmarklet limitations
 
 <ul class="med-font">
@@ -251,9 +243,7 @@ var encodedBookmarkletHref = encodeURI(
     https://stackoverflow.com/a/417184/145346 (size limitation)
   </a>
 </div>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Bookmarklet Example
 
 ```js
@@ -265,9 +255,7 @@ var encodedBookmarkletHref = encodeURI(
 <a class="small-font" href="https://www.cornify.com/extras">
   https://www.cornify.com/extras
 </a>
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Other Bookmarklets
 
 - [Change URL value](https://gist.github.com/Mottie/0e7a119ce0e90d054fef#change-last-value) - go to next/prev GitHub issue
@@ -275,13 +263,9 @@ var encodedBookmarkletHref = encodeURI(
 - [Show anchors](http://www.sensefulsolutions.com/2009/12/show-anchors-bookmarklet.html) - Show all anchors
 - [Kick Ass](https://kickassapp.com/) - Asteroids-like in page game
 - [Awesome bookmarklets](https://github.com/marcobiedermann/awesome-bookmarklets) - curated list
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Questions?
-
----
-
+</script></section><section  data-markdown><script type="text/template">
 ### Thanks!
 
 #### Rob Garrison
@@ -291,3 +275,55 @@ var encodedBookmarkletHref = encodeURI(
 &#x00ab;w&#x006f;wm&#111;&#x0074;&#116;y&#x40;&#103;m&#x0061;il&#46;c&#111;m&#187;
 <br>
 [github.com/Mottie](https://github.com/Mottie)
+</script></section></div>
+    </div>
+
+    <script src="./dist/reveal.js"></script>
+
+    <script src="./plugin/markdown/markdown.js"></script>
+    <script src="./plugin/highlight/highlight.js"></script>
+    <script src="./plugin/zoom/zoom.js"></script>
+    <script src="./plugin/notes/notes.js"></script>
+    <script src="./plugin/math/math.js"></script>
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath
+        ]
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {}, queryOptions);
+    </script>
+
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
