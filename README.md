@@ -12,15 +12,15 @@ Click on the thumbnail to start the presentation
 
 |   |
 |:-:|
-| [![Customizing the web](./customizing-the-web/images/thumb-customizing-the-web.png)](https://mottie.github.io/Presentations/customizing-the-web/_static) |
-| [![Userscripts & Bookmarklets](./userscripts/images/thumb-userscripts-bookmarklets.png)](https://mottie.github.io/Presentations/userscripts/_static) |
-| [![Unicode, diacritics and normalization](./unicode-diacritics-and-normalization/images/thumb-unicode-diacritics-and-normalization.png)](https://mottie.github.io/Presentations/unicode-diacritics-and-normalization/_static) |
+| [![Customizing the web](./customizing-the-web/images/thumb-customizing-the-web.png)](https://mottie.github.io/Presentations/customizing-the-web/public) |
+| [![Userscripts & Bookmarklets](./userscripts/images/thumb-userscripts-bookmarklets.png)](https://mottie.github.io/Presentations/userscripts/public) |
+| [![Unicode, diacritics and normalization](./unicode-diacritics-and-normalization/images/thumb-unicode-diacritics-and-normalization.png)](https://mottie.github.io/Presentations/unicode-diacritics-and-normalization/public) |
 
 ### Open locally
 
 - Go to a presentation folder, e.g. `cd unicode-diacritics-and-normalization`
 - Run static page:
-  - Go to the `_static` sub-folder
+  - Go to the `public` sub-folder
   - Open `index.html` in your browser
 - Or, run the server using `npx reveal-md index.md`
 
@@ -28,4 +28,4 @@ Click on the thumbnail to start the presentation
 
 - Go to a presentation folder, e.g. `cd unicode-diacritics-and-normalization`
 - Make changes to the associated `index.md`
-- Build the static site using `npx reveal-md index.md --static`
+- Build the static site using `npx reveal-md index.md --static public`
