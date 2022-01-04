@@ -1,0 +1,12 @@
+# Layout
+layout : center
+
+# Look-and-Feel
+theme : night
+highlight : darcula
+
+# Behavior
+transition : convex
+published : true
+
+# Plugins
